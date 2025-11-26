@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentReader_Api", "DocumentReader_Api\DocumentReader_Api.csproj", "{A057FCD9-8784-520F-ACA2-04DAD40C7F59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A057FCD9-8784-520F-ACA2-04DAD40C7F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A057FCD9-8784-520F-ACA2-04DAD40C7F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A057FCD9-8784-520F-ACA2-04DAD40C7F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A057FCD9-8784-520F-ACA2-04DAD40C7F59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2ABE3435-A59A-4408-9832-0CCE6FCF163F}
+	EndGlobalSection
+EndGlobal
