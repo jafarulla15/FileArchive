@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Register our PDF reader service
 builder.Services.AddScoped<IPdfTextExtractor, PdfTextExtractor>();
+builder.Services.AddScoped<IWordTextExtractor, WordTextExtractor>();
 // Enable Swagger for testing
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
