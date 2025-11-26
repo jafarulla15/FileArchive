@@ -8,7 +8,7 @@ namespace PdfReaderApi.Controllers
     public class PdfController : ControllerBase
     {
         private readonly IPdfTextExtractor _pdfTextExtractor;
-        private readonly long _maxFileSizeBytes = 10 * 1024 * 1024; // 10 MB
+        private readonly long _maxFileSizeBytes = 20 * 1024 * 1024; // 20 MB
 
         public PdfController(IPdfTextExtractor pdfTextExtractor)
         {
@@ -16,11 +16,12 @@ namespace PdfReaderApi.Controllers
         }
 
         /// <summary>
-        /// Upload a PDF file and get its extracted text.
+        /// Endpoint to read and extract text from an uploaded PDF file.
         /// </summary>
-        /// <param name="file">PDF file as multipart/form-data.</param>
-        /// <returns>Extracted text.</returns>
+        /// <param name="file"></param>
+        /// <returns></returns>
         [HttpPost("read")]
+        [Consumes("multipart/form-data")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status413PayloadTooLarge)]
